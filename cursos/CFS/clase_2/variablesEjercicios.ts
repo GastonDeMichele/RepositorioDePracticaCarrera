@@ -51,3 +51,10 @@ console.log(girarDerecha);
 console.log(moverAdelante);
 console.log(removerPila);
 
+// Consigna 2: Modificar el ejemplo de base por altura.
+
+let base: number = 5;
+let altura: number = 10;
+let areaRectangulo = base * altura;
+
+console.log(areaRectangulo);
