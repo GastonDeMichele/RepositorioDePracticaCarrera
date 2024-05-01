@@ -67,4 +67,5 @@ let base: number = 5;
 let altura: number = 10;
 let areaRectangulo = base * altura;
 
-console.log(areaRectangulo);
+
+console.log(`el resultado de base: ${base} por altura: ${altura}, da como resultado el area: ${areaRectangulo}`);
