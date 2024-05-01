@@ -29,25 +29,26 @@ console.log(removerPila);
 
 
 //Granjera 2
-console.log(``);
-console.log("mover hacia adelante");
-console.log("llenar");
-console.log("mover hacia adelante");
-console.log("mover hacia adelante");
-console.log("mover hacia adelante");
-console.log("llenar");
-console.log("mover hacia adelante");
-console.log("remover");
-console.log("mover hacia adelante");
-console.log("remover");
-console.log("mover hacia adelante");
+console.log(moverAdelante);
+console.log(rellenar);
+console.log(moverAdelante);
+console.log(moverAdelante);
+console.log(moverAdelante);
+console.log(rellenar);
+console.log(moverAdelante);
+console.log(removerPila);
+console.log(moverAdelante);
+console.log(removerPila);
+console.log(moverAdelante);
+
 
 //Granjera 3
-console.log("girar a la izquierda");
-console.log("mover hacia adelante");
-console.log("girar a la derecha");
-console.log("mover hacia adelante");
-console.log("mover hacia adelante");
-console.log("girar a la derecha");
-console.log("mover hacia adelante");
-console.log("remover");
+console.log(girarIzquierda);
+console.log(moverAdelante);
+console.log(girarDerecha);
+console.log(moverAdelante);
+console.log(moverAdelante);
+console.log(girarDerecha);
+console.log(moverAdelante);
+console.log(removerPila);
+
