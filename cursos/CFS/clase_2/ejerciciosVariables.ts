@@ -1,11 +1,10 @@
-//variables reutilizables para todos los ejercicios
+//consigna 1 : Modificar el ejemplo de secuencia.
+
 let moverAdelante: string = "mover hacia adelante";
-let girarIzquierda: string = "girar hacia la izquierda"
-let girarDerecha: string = "girar hacia la derecha"
-let removerPila: string = "remover pila"
-let rellenar: string = "rellenar"
-
-
+let girarIzquierda: string = "girar hacia la izquierda";
+let girarDerecha: string = "girar hacia la derecha";
+let removerPila: string = "remover pila";
+let rellenar: string = "rellenar";
 //granjera 1
 console.log(moverAdelante);
 console.log(removerPila);
