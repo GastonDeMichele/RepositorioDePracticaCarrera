@@ -52,25 +52,22 @@ if (siguienteEjercicio.toLowerCase() === "si") {
         console.log("Avanzando al siguiente ejercicio...");
     }
     //Ejercicio – Determinar Medalla
-    for (let i = 1; i <= 4; i++) {
-        let posicionLlegada: number = rls.questionInt(`Ingrese la posicion de llegada del competidor ${i}: `);
-    
-        switch (posicionLlegada) {
-            case 1:
-                console.log("Entregar medalla de oro al competidor", i);
-                break;
-            case 2:
-                console.log("Entregar medalla de plata al competidor", i);
-                break;
-            case 3:
-                console.log("Entregar medalla de bronce al competidor", i);
-                break;
-            default:
-                console.log("Entregar mención de participación al competidor", i);
-        }
+    let posicionLlegada: number = rls.questionInt("Ingrese la posicion de llegada del competidor: ");
+
+    switch (posicionLlegada) {
+        case 1:
+            console.log("Entregar medalla de oro");
+            break;
+        case 2:
+            console.log("Entregar medalla de plata");
+            break;
+        case 3:
+            console.log("Entregar medalla de bronce");
+            break;
+        default:
+            console.log("Entregar mención de participación");
     }
     
-
 
 
 } else {
