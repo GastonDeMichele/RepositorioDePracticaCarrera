@@ -32,30 +32,46 @@ if (siguienteEjercicio.toLowerCase() === "si") {
         console.log(`Puedes ingresar a la montaña rusa`);
     }
 
-        let siguienteEjercicio2 = rls.question(`Escriba "si" para ir al siguiente ejercicio: `);
-        if (siguienteEjercicio2.toLowerCase() === "si") {
-            console.log("Avanzando al siguiente ejercicio...");
-        }
-            // Ejercicio - Login
-            let name: string = rls.question(`Ingrese ID o Nombre de Usuario:`);
-            let password: string = rls.question(`Ingrese Password:`);
-            console.log();
-            if (name === `Juan` && password === `claveJuan`) {
-                console.log("Haz sido logueado con éxito!");
-            } else {
-                console.log("El ID o el Password son incorrectos");
-            }
+    let siguienteEjercicio2 = rls.question(`Escriba "si" para ir al siguiente ejercicio: `);
+    if (siguienteEjercicio2.toLowerCase() === "si") {
+        console.log("Avanzando al siguiente ejercicio...");
+    }
+    // Ejercicio - Login
+    let name: string = rls.question(`Ingrese ID o Nombre de Usuario:`);
+    let password: string = rls.question(`Ingrese Password:`);
+    console.log();
+    if (name === `Juan` && password === `claveJuan`) {
+        console.log("Haz sido logueado con éxito!");
+    } else {
+        console.log("El ID o el Password son incorrectos");
+    }
 
 
-            let siguienteEjercicio3 = rls.question(`Escriba "si" para ir al siguiente ejercicio: `);
-            if (siguienteEjercicio3.toLowerCase() === "si") {
-                console.log("Avanzando al siguiente ejercicio...");
-            }
-            //Ejercicio – Determinar Medalla
-            
+    let siguienteEjercicio3 = rls.question(`Escriba "si" para ir al siguiente ejercicio: `);
+    if (siguienteEjercicio3.toLowerCase() === "si") {
+        console.log("Avanzando al siguiente ejercicio...");
+    }
+    //Ejercicio – Determinar Medalla
+    let posicionLlegada: number = rls.questionInt("Ingrese la posicion de llegada del competidor: ");
+
+    switch (posicionLlegada) {
+        case 1:
+            console.log("Entregar medalla de oro");
+            break;
+        case 2:
+            console.log("Entregar medalla de plata");
+            break;
+        case 3:
+            console.log("Entregar medalla de bronce");
+            break;
+        default:
+            console.log("Entregar mención de participación");
+
+    }
 
 
-        } else {
-            console.log(`No ingresaste "si", no se procederá al siguiente ejercicio.`);
-        }
+
+} else {
+    console.log(`No ingresaste "si", no se procederá al siguiente ejercicio.`);
+}
 
