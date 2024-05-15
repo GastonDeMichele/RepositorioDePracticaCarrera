@@ -27,15 +27,15 @@ while (i<3) {
     let ingresoClave : string = rls.question(`Ingrese su clave aqui: `); 
 
     if (ingresoClave=== "eureka" ) {
-        console.log(Clave ingresada con exito!);
+        console.log(`Clave ingresada con exito!`);
         break;
     } else{
-      console.log(Clave incorrecta);
+      console.log(`Clave incorrecta`);
     };
     i++;
 };
   if(i === 3){
-    console.log(Haz agotado todas tus oportunidades)
+    console.log(`Haz agotado todas tus oportunidades`)
   };
 
 
@@ -43,20 +43,20 @@ while (i<3) {
 /*
 Ejercicio 2: Múltiplos
 
-* Cree un algoritmo que visualice los
+Cree un algoritmo que visualice los
 números que son múltiplos de 2 o
 de 3 que hay entre 1 y 100
-* Tener en cuenta que hay números
+Tener en cuenta que hay números
 que son múltiplos de 2 y de 3 al
 mismo tiempo
-* En dichos casos, solamente
+En dichos casos, solamente
 indique el número una vez
 */
-let iniciarMultiplos: string = rls.question(presione la tecla "s" para el siguiente ejercicio:)
-if (iniciarMultiplos===s) {
+let iniciarMultiplos: string = rls.question(`presione la tecla "s" para el siguiente ejercicio: `)
+if (iniciarMultiplos===`s`) {
   for (let i: number = 1; i <= 100; i++) {
     if (i % 2 === 0 || i % 3 === 0) {
-      console.log(${i} es un múltiplo de 2 o de 3);
+      console.log(`${i} es un múltiplo de 2 o de 3`);
       };
     };
   
@@ -67,11 +67,11 @@ if (iniciarMultiplos===s) {
 /*
 Ejercicio 3: Par/Impar
 
-* Realizar un algoritmo que dado un
+Realizar un algoritmo que dado un
 número entero ingresado por el
 usuario, visualice en pantalla si es
 par o impar
-* En el caso de ingresar un cero, se
+En el caso de ingresar un cero, se
 debe volver a pedir el número por
 teclado (hasta que se ingrese un
 número mayor que cero
@@ -89,13 +89,13 @@ pseudocodigo:
 let datoNum: number = 0;
 
 while (datoNum === 0) {
-    datoNum = rls.questionInt(Ingrese numero entero distinto de cero:);
+    datoNum = rls.questionInt(`Ingrese numero entero distinto de cero: `);
 }
 
 if (datoNum % 2 === 0) {
-    console.log(El número ingresado es par);
+    console.log(`El número ingresado es par`);
 } else {
-    console.log(El número ingresado es impar);
+    console.log(`El número ingresado es impar`);
 }
 
 
@@ -171,10 +171,10 @@ for (let i = 1; i <=numeroMultiplicador;i++){
  
  /*
  Ejercicio 6: Encontrar el Número Máximo
-* Leer valores hasta que se introduzca un cero (0)
-* El usuario puede introducir valores positivos y negativos
-* Encontrar el máximo de los elementos que se introdujeron
-* Analizar cómo cambia el programa para hallar el mínimo
+ Leer valores hasta que se introduzca un cero (0)
+El usuario puede introducir valores positivos y negativos
+ Encontrar el máximo de los elementos que se introdujeron
+ Analizar cómo cambia el programa para hallar el mínimo
 
 
 pseudocodigo:
