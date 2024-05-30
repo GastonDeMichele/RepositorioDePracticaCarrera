@@ -218,3 +218,5 @@ multiplicarArreglo(v4,v5,sumaParcial);
 sumaParcial = multiplicarArreglo(sumaParcial,v6,sumaParcial);
 
 finalResult = multiplicarArreglo(sumaParcial,v7,finalResult);
+
+console.log(finalResult);
