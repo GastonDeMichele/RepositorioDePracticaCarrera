@@ -53,17 +53,41 @@ pseudocodigo
 3- let v2 = arrayvacio(longitudArr);
 4- funcion cargaArreglos(carga:number[]) 
 --dentro inicia for(let i=0; i<longitudArr;i++)
----dentro de for: v[i]= rls("carga usuario:")
-- retorno valor
+---dentro de for: carga[i]= rls("carga usuario:")
+
 5- funcion escalaVectores(v1:number[],v2:number[])
 -- dentro let resultado = new arr(longitudArr)
-let arrUno = función(v1)
-let  arrDos= funcion(v2)
 - inicio for(i=0;i<long)
-6- dentro llamo función operacionEscala(v1:number[],v2:number[]) con los valores arrUno y arrDos
---Contenido de la funcion operacionEscala(v1,v2){let resultado=0; resultado += arrUno[i]*arrDos[i]; }
-
-
-
-
+6- dentro llamo función operacionEscala(v1:number[],v2:number[]) con los valores v1 y v2
+--Contenido de la funcion operacionEscala(v1,v2){let resultado=0; resultado += v1[i]*v2[i]; }
 */
+let longArray:number =  rls.questionInt(`Ingrese la longitud del arreglo:`);
+let v1:number[] = new Array(longArray);
+let v2:number[] = new Array(longArray);
+
+
+function cargaArreglos(arr:number[]) {
+for (let i = 0; i < longArray; i++) {
+  arr[i] = rls.questionInt(`Ingresa el numero que va en la posición "${i}": `)
+}  
+}
+cargaArreglos(v1);
+cargaArreglos(v2);
+
+function escalaVectores(v1:number[],v2:number[]){
+  let resultado: number = 0;
+  for (let i = 0; i < longArray; i++) {
+    resultado += v1[i] * v2[i];
+  }
+  return resultado
+}
+
+
+
+
+const resultado = escalaVectores(v1,v2)
+
+
+console.log(`El resultado es: ${resultado}`)
+
+
