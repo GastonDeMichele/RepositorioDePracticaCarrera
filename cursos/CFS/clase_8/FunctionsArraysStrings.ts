@@ -48,26 +48,37 @@ v2 =		3, 4, 5
 producto = 	14
 
 pseudocodigo
-1- let longitudArr = rls(mensaje usurario:);
-2- let v1 = arrayvacio(longitudArr);
-3- let v2 = arrayvacio(longitudArr);
-4- funcion cargaArreglos(carga:number[]) 
---dentro inicia for(let i=0; i<longitudArr;i++)
----dentro de for: carga[i]= rls("carga usuario:")
+1. Solicitar al usuario la longitud del vector y almacenarla en tamañoVector
+2. Crear un vector vacío llamado vector1 con tamaño igual a tamañoVector
+3. Crear un vector vacío llamado vector2 con tamaño igual a tamañoVector
 
-5- funcion escalaVectores(v1:number[],v2:number[])
--- dentro let resultado = new arr(longitudArr)
-- inicio for(i=0;i<long)
-6- dentro llamo función operacionEscala(v1:number[],v2:number[]) con los valores v1 y v2
---Contenido de la funcion operacionEscala(v1,v2){let resultado=0; resultado += v1[i]*v2[i]; }
+4. Definir la función cargarVector que toma un vector como argumento:
+    - Para cada índice desde 0 hasta tamañoVector - 1:
+        - Solicitar al usuario un valor y almacenarlo en el índice correspondiente del vector
+
+5. Llamar a cargarVector con vector1
+6. Llamar a cargarVector con vector2
+
+7. Definir la función escalarVectores que toma dos vectores como argumentos:
+    - Crear un vector resultado con tamaño igual a tamañoVector
+    - Para cada índice desde 0 hasta tamañoVector - 1:
+        - Llamar a la función operarEscala con los valores en la posición i de los vectores y almacenar el resultado en el índice correspondiente del vector resultado
+
+8. Definir la función operarEscala que toma dos valores como argumentos:
+    - Retornar el producto de los dos valores
+
+
+9. Llamar a escalarVectores con vector1 y vector2 y almacenar el resultado
+10. Imprimir el vector resultado
+
 */
-let longArray:number =  rls.questionInt(`Ingrese la longitud del arreglo:`);
-let v1:number[] = new Array(longArray);
-let v2:number[] = new Array(longArray);
+let tamañoVector:number =  rls.questionInt(`Ingrese la longitud del arreglo:`);
+let v1:number[] = new Array(tamañoVector);
+let v2:number[] = new Array(tamañoVector);
 
 
 function cargaArreglos(arr:number[]) {
-for (let i = 0; i < longArray; i++) {
+for (let i = 0; i < tamañoVector; i++) {
   arr[i] = rls.questionInt(`Ingresa el numero que va en la posición "${i}": `)
 }  
 }
@@ -76,7 +87,7 @@ cargaArreglos(v2);
 
 function escalaVectores(v1:number[],v2:number[]){
   let resultado: number = 0;
-  for (let i = 0; i < longArray; i++) {
+  for (let i = 0; i < tamañoVector; i++) {
     resultado += v1[i] * v2[i];
   }
   return resultado
@@ -91,3 +102,64 @@ const resultado = escalaVectores(v1,v2)
 console.log(`El resultado es: ${resultado}`)
 
 
+
+
+
+
+
+/*
+
+*/
+
+// Función para convertir una vocal en su equivalente según la clave
+function convertirVocal(caracter: string): string {
+  switch (caracter) {
+      case 'a': return '.';
+      case 'e': return ',';
+      case 'i': return ';';
+      case 'o': return ':';
+      case 'u': return '!';
+      default: return caracter;
+  }
+}
+
+// Función para cambiar el caso de una consonante
+function cambiarCaso(caracter: string): string {
+  if (caracter === caracter.toLowerCase()) {
+      return caracter.toUpperCase();
+  } else {
+      return caracter.toLowerCase();
+  }
+}
+
+// Función principal para convertir la palabra según las reglas dadas
+function convertirPalabra(palabra: string): string {
+  let resultado = '';
+  
+  for (const caracter of palabra) {
+      if ('aeiou'.includes(caracter)) {
+          resultado += convertirVocal(caracter);
+      } else if ('0123456789+-*/'.includes(caracter)) {
+          resultado += caracter;
+      } else if (/[a-zA-Z]/.test(caracter)) {
+          resultado += cambiarCaso(caracter);
+      } else {
+          resultado += caracter;
+      }
+  }
+  
+  return resultado;
+}
+
+// Solicitar palabra al usuario
+const palabraUsuario: string = rls.question("Ingrese una palabra:") ;
+
+// Convertir la palabra ingresada y mostrar el resultado
+const palabraConvertida: string = convertirPalabra(palabraUsuario);
+console.log(`La palabra convertida es: ${palabraConvertida}`);
+
+
+
+/*
+
+*/
