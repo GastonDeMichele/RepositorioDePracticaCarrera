@@ -18,8 +18,8 @@ function escribirEnUnaLinea(arreglo: number[], cantidad: number) {
 
 function burbuja(arreglo: number[], cantidad: number) {
     let i: number, j: number;
-    for (i = 1; i < cantidad; i++) {  // Corregido el inicio del bucle i
-        for (j = 0; j < (cantidad - i); j++) {  // Corregido el límite del bucle j
+    for (i = 1; i < cantidad; i++) {  
+        for (j = 0; j < (cantidad - i); j++) {  
             if (comparar(arreglo, j, j + 1) == 1) {
                 intercambiar(arreglo, j, j + 1);
             }
@@ -31,7 +31,7 @@ function comparar(arreglo: number[], i: number, j: number): number {
     let comparacion: number;
     if (arreglo[i] === arreglo[j]) {
         comparacion = 0;
-    } else if (arreglo[i] > arreglo[j]) {  // Cambiado para orden descendente
+    } else if (arreglo[i] > arreglo[j]) {  
         comparacion = -1;
     } else {
         comparacion = 1;
