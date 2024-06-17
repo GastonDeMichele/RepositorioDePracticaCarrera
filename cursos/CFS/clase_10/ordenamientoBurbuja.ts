@@ -1,4 +1,4 @@
-import { questionInt } from "readline-sync";
+import  {questionInt}  from "readline-sync";
 
 function cargar(arreglo: number[], cantidad: number, numAzar: number) {
     let i: number;
