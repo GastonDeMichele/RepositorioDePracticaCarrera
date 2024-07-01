@@ -15,10 +15,10 @@ fs.writeFileSync("./test.txt", contenido);
 
 
 //traemos la informacion del txt
-const datos:string = fs.readFileSync("./test.txt", "utf8")
+const datos:string = fs.readFileSync("./test.txt", "utf8");
 console.log(datos);
 console.log("finalizado")
-//para convertir en array de nuevo el string que nos trae la variable datos del txt:
 
+//para convertir en array de nuevo el string que nos trae la variable datos del txt:
 const nuevoArray: string[] = datos.split(" ")
 console.log(nuevoArray);
