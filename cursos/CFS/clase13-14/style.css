@@ -1,0 +1,83 @@
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+.container {
+    display: flex; 
+    padding: 10px;
+    gap: 10px; 
+  }
+  .box {
+    border: 2px solid black;
+    background-color: lightgray; 
+    padding: 20px; 
+  }
+
+
+
+.left-div {
+    flex: 20%;
+    padding: 20px;
+    background-color: rgb(61, 219, 33);
+    height: 100px;
+}
+
+.right-div {
+    flex: 80%;
+    padding: 20px;
+    background-color: rgb(164, 167, 175);
+}
+
+.header {
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.menu-izq {
+    flex: 10%;
+    height: 600px;
+    background-color: rgb(174, 76, 235)
+}
+
+.main-container {
+    width: 90%; /* Ajusta este valor según el espacio que desees a los costados */
+    max-width: 1200px; /* Ajusta el valor para la máxima anchura */
+    margin: 20px auto; /* Centro y margen vertical */
+    padding: 20px;
+    border: 2px solid black; /* Borde para la caja grande */
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    flex: 4;
+}
+
+.top-right {
+    height: 290px; 
+    background-color: rgb(111, 167, 239);
+    padding: 20px;
+}
+
+.left-color{
+    background-color: rgb(252, 77, 199);
+}
+
+.bottom-right {
+    grid-column: span 2; /* Esta caja ocupa ambas columnas */
+    height: 300px;
+    background-color: rgb(242, 177, 37);
+    padding: 20px;
+}
+
+.footer{
+    width: 100%;
+    background-color: rgb(149, 217, 253) ;
+    height: 90px;
+    
+}
