@@ -1,0 +1,39 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Elementos anidados */
+.container .nested {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #bbb;
+}
+
+/* Selectores anidados */
+.container h1 {
+    color: #333;
+}
+
+.container p {
+    color: #666;
+}
+
+/* Estilo para enlaces */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+a:visited {
+    color: purple;
+}
