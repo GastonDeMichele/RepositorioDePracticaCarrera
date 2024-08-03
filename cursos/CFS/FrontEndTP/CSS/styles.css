@@ -215,7 +215,7 @@ h1 {
 
   .hero-image-p {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     color: var(--third-color);
     line-height: 1.5;
     font-size: 1vw;
