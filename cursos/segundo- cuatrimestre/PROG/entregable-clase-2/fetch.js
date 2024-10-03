@@ -1,10 +1,10 @@
 fetch('https://rickandmortyapi.com/api/character')
-    .then(response => response.json())  // Convertimos la respuesta a JSON
+    .then(response => response.json()) 
     .then(data => {
-        console.log(data);  // Aquí podemos ver los datos en la consola
-        mostrarPersonajes(data.results);  // Llamamos a una función para mostrar los personajes
+        console.log(data); 
+        mostrarPersonajes(data.results);  
     })
-    .catch(error => console.error('Error:', error));  // Si hay algún error
+    .catch(error => console.error('Error:', error));  
 
 
 function mostrarPersonajes(personajes) {
