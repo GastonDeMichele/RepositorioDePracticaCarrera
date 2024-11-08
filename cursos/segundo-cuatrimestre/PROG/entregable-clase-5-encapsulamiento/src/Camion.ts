@@ -1,4 +1,4 @@
-// src/Camion.ts
+
 class Camion {
     private marca: string;
     private capacidadCarga: number;

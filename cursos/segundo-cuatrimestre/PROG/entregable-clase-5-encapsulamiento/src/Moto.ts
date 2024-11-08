@@ -1,4 +1,4 @@
-// src/Moto.ts
+
 class Moto {
     private marca: string;
     private cilindrada: number;

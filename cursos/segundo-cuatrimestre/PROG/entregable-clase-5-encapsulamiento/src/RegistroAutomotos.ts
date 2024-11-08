@@ -1,4 +1,3 @@
-// src/RegistroAutomotor.ts
 import { Auto } from "./Auto";
 import { Moto } from "./Moto";
 import { Camion } from "./Camion";
@@ -38,11 +37,11 @@ class RegistroAutomotor {
         }
     }
 
-    darDeBajaAuto(index: number): void {
-        this.autos.splice(index, 1);
+    darDeBajaAuto(index: number): number {
+        this.autos.splice(index, 1);  // Elimina el vehículo en el índice especificado
+        return this.autos.length;  // Retorna el número de vehículos restantes
     }
-
-    // Similar para modificarMoto, modificarCamion, darDeBajaMoto, darDeBajaCamion
 }
 
 export { RegistroAutomotor };
+

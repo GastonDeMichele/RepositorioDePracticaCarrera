@@ -1,4 +1,4 @@
-// src/Auto.ts
+
 class Auto {
     private marca: string;
     private modelo: string;
